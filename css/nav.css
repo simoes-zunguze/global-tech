@@ -1,0 +1,299 @@
+
+/**************
+    TIPOGRAPHY
+*************/
+
+.glow-on-hover {
+
+    /* padding: 0.5em 0; */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background:  #fce202;
+    position: absolute;
+    top: 0;
+    left:0;
+    /* background-size: 400%; */
+    z-index: -1;
+    filter: blur(6px);
+    width: 100%;
+    height: 100%;
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 3px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+}
+.glow-on-hover:hover:after {
+    /* background: #111; */
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+nav{
+    height: 4rem;
+    width: 100vw;
+    background-color: #1314185b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+/*Styling logo*/
+.logo{
+    margin-left: 25px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 11;
+    backdrop-filter: blur(3px);
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.281); */
+    cursor: pointer;
+}
+.logo img {
+    /* height: 5rem; */
+    width: 100px;
+}
+
+.logo-back{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    left: 15px;
+    background: linear-gradient(45deg, #3bffe5, #1fd0e7);
+    filter: blur(30px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.logo:hover ~ .logo-back{
+    opacity: 1;
+}
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 80%;
+    max-width: 520px;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links li a{
+    text-decoration: none;
+    padding: 0 0.7vw;
+    color: white;
+    font-size: 14px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    background: linear-gradient(121.57deg,#FFFFFF 80%,  rgba(255, 255, 255, 0.66)  10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-links li {
+    position: relative;
+}
+
+
+/*Styling Buttons*/
+.login-button{
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+.join-button{
+    color: #131418;
+    background-color: #61DAFB;
+    border: 1.5px solid #61DAFB;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.join-button:hover {
+    color: #f2f5f7;
+    background-color: transparent;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 25px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+    background: linear-gradient(130deg,#0045db,#1fd0e7 41.07%,#30C623 76.05%);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.281);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.social-networks{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    font-size: 24px;
+    
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 10;
+        background:none;
+        backdrop-filter: unset;
+
+    }
+
+    .logo{
+        margin-left: 5%;
+    }
+
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        top: 0;
+
+        background: #131418;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all .5s ease-out;
+        pointer-events: none;
+        right: 0;
+        width: 100vw;
+        max-width: none;
+    }
+    .nav-links .fade{
+            padding: 3vh 0;
+    }
+
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+
+    .social-networks{
+        display: none;
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
