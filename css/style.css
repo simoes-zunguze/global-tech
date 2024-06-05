@@ -80,7 +80,7 @@ p{
 
 .title-bar{
     width: 100%;
-    height: 80px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ p{
 
 
 .title-bar .bar{
-    width: 200px;
+    width: 240px;
     height: 4px;
     background-color: #0b1459;
     background-image: var(--bar-gradient)
@@ -518,7 +518,7 @@ header{
 .services{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
+    padding: 50px 0;
     justify-content: center;
     align-items: center;
     background-image: url('../img/services-back-image.jpg');
