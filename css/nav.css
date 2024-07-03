@@ -1,7 +1,16 @@
 
-/**************
-    TIPOGRAPHY
+/*************
+    Tipography
 *************/
+
+:root{
+    --card-color: #22283359;
+    --card-border-radius: 10px;
+    --background-color: #181818;
+    --bar-gradient: linear-gradient(130deg,#0b1459,#fce202 41.07%,#0b1459 76.05%);
+    --line-height: 30px;
+    --main-color: #fce202;
+}
 
 .glow-on-hover {
 
@@ -187,7 +196,7 @@ nav{
 }
 .hamburger{
     display: none;
-    background: linear-gradient(130deg,#0045db,#1fd0e7 41.07%,#30C623 76.05%);
+    background: linear-gradient(121.57deg, #1a1c1d 18.77%, var(--main-color) 60.15%);
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.281);
     border-radius: 5px;
     padding: 5px;

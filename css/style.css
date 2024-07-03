@@ -88,7 +88,8 @@ p{
 
 
 .title-bar .bar{
-    width: 240px;
+    width: 60%;
+    max-width: 500px;
     height: 4px;
     background-color: #0b1459;
     background-image: var(--bar-gradient)
@@ -129,7 +130,7 @@ header{
 .header-row .col{
    
     min-height: 200px;
-    width: 90%;
+    width: 100%;
     margin: 5px;
     display: flex;
     align-items: center;
@@ -376,8 +377,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-     
-   
+    padding-bottom: 60px;
 }
 
 
@@ -395,7 +395,6 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-     
 }
 
 .about-row .card{
@@ -403,6 +402,9 @@ header{
     background-color: #1a1f27;
     margin: 10px 0; 
     padding: 10px;
+    height: 320px;
+    /* align-items: stretch; */
+
     width: calc(100% - 60px);
     border-radius: var(--card-border-radius);
 }
@@ -917,6 +919,7 @@ footer{
 .products{
     position: relative;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: 100px;
     padding: 100px 0;
