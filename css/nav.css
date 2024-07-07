@@ -77,7 +77,7 @@
 
 
 nav{
-    height: 4rem;
+    height: 5rem;
     width: 100vw;
     background-color: #1314185b;
     display: flex;
@@ -113,7 +113,7 @@ nav{
     height: 50px;
     width: 100px;
     left: 15px;
-    background: linear-gradient(45deg, #3bffe5, #1fd0e7);
+    background: linear-gradient(45deg, #fff83b, #fafcfc);
     filter: blur(30px);
     opacity: 0;
     transition: 0.5s;

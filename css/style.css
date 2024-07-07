@@ -54,7 +54,7 @@ footer
     --card-color: #22283359;
     --card-border-radius: 10px;
     --background-color: #181818;
-    --bar-gradient: linear-gradient(130deg,#0b1459,#fce202 41.07%,#0b1459 76.05%);
+    --bar-gradient: linear-gradient(100deg,#0b1459,#fce202 71.07%,#0b1459 76.05%);
     --line-height: 30px;
     --main-color: #fce202;
 }
