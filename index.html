@@ -1,393 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta name="description" content="GLOBO TECH" />
-        <meta name="keywords" content="GLOBO TECH" />
-        <meta name="robots" content="index, follow" />
+    <meta name="description" content="GLOBO TECH" />
+    <meta name="keywords" content="GLOBO TECH" />
+    <meta name="robots" content="index, follow" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
-            rel="stylesheet"
-        />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/canvas.css" />
-        <link
-            rel="shortcut icon"
-            type="image/jpg"
-            href="/img/simple_logo.png"
-        />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/canvas.css" />
+    <link rel="shortcut icon" type="image/jpg" href="/img/simple_logo.png" />
 
-        <title>GLOBO TECH</title>
-    </head>
+    <title>GLOBO TECH</title>
+  </head>
 
-    <body>
-        <canvas id="canvas"></canvas>
-        <nav>
-            <div class="logo" id="home" onclick="location.reload()">
-                <img src="img/logo2.png" alt="Logo Image" />
-            </div>
-            <div class="logo-back"></div>
-            <div class="hamburger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-links">
-                <li class="glow-on-hover">
-                    <a href="#top"
-                        ><i
-                            class="fa fa-home title-style"
-                            style="font-size: 20px"
-                        ></i
-                    ></a>
-                </li>
-                <li class="glow-on-hover"><a href="#about">ABOUT</a></li>
+  <body>
+    <canvas id="canvas"></canvas>
+    <nav>
+      <div class="logo" id="home" onclick="location.reload()">
+        <img src="img/logo2.png" alt="Logo Image" />
+      </div>
+      <div class="logo-back"></div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li class="glow-on-hover">
+          <a href="#top"
+            ><i class="fa fa-home title-style" style="font-size: 20px"></i
+          ></a>
+        </li>
+        <li class="glow-on-hover"><a href="#about">ABOUT</a></li>
 
-                <li class="glow-on-hover"><a href="#products">PRODUCTS</a></li>
+        <li class="glow-on-hover"><a href="#products">PRODUCTS</a></li>
 
-                <li class="glow-on-hover"><a href="#services">SERVICES</a></li>
-                <li class="glow-on-hover"><a href="#">PROJECTS</a></li>
+        <li class="glow-on-hover"><a href="#services">SERVICES</a></li>
+        <li class="glow-on-hover"><a href="#">PROJECTS</a></li>
 
-                <li class="glow-on-hover"><a href="#partners">PARTNERS</a></li>
+        <li class="glow-on-hover"><a href="#partners">PARTNERS</a></li>
 
-                <li class="glow-on-hover"><a href="#contacts">CONTACTS</a></li>
-                <!-- <li><button class="login-button" href="#">Login</button></li>
+        <li class="glow-on-hover"><a href="#contacts">CONTACTS</a></li>
+        <!-- <li><button class="login-button" href="#">Login</button></li>
             <li><button class="join-button" href="#">Join</button></li> -->
-            </ul>
-            <div class="social-networks">
-                <i
-                    class="fa fa-linkedin-square"
-                    onmouseover="this.style.color='#0177b5'"
-                ></i>
-                <i
-                    class="fa fa-twitter-square"
-                    onmouseover="this.style.color='#5ea9dd'"
-                ></i>
-                <i
-                    class="fa fa-youtube-play"
-                    onmouseover="this.style.color='#900'"
-                ></i>
-                <i
-                    class="fa fa-facebook-square"
-                    onmouseover="this.style.color='#4867aa'"
-                ></i>
+      </ul>
+      <div class="social-networks">
+        <i
+          class="fa fa-linkedin-square"
+          onmouseover="this.style.color='#0177b5'"
+        ></i>
+        <i
+          class="fa fa-twitter-square"
+          onmouseover="this.style.color='#5ea9dd'"
+        ></i>
+        <i class="fa fa-youtube-play" onmouseover="this.style.color='#900'"></i>
+        <i
+          class="fa fa-facebook-square"
+          onmouseover="this.style.color='#4867aa'"
+        ></i>
+      </div>
+    </nav>
+    <div class="container">
+      <header>
+        <div class="header-row">
+          <div class="col col2" data-aos="zoom-out">
+            <h1 class="title">WELCOME TO GLOBO TECH</h1>
+            <div class="welcome">WHERE ENGINEERING MEET EXPERIENCE</div>
+            <a class="read-more pulse" href="#about">SUCCESS STORIES</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="about">
+        <div class="description">
+          <h2 class="title-style" data-aos="zoom-in" id="about">ABOUT US</h2>
+          <div class="title-bar" data-aos="zoom-in">
+            <div class="bar">
+              <div class="bar-center"></div>
             </div>
-        </nav>
-        <div class="container">
-            <header>
-                <div class="header-row">
-                    <div class="col col2" data-aos="zoom-out">
-                        <h1 class="title">WELCOME TO GLOBO TECH</h1>
-                        <div class="welcome">
-                            WHERE ENGINEERING MEET EXPERIENCE
-                        </div>
-                        <a class="read-more pulse" href="#about"
-                            >SUCCESS STORIES</a
-                        >
-                    </div>
-                </div>
-            </header>
+          </div>
 
-            <section class="about">
-                <div class="description">
-                    <h2 class="title-style" data-aos="zoom-in" id="about">
-                        ABOUT US
-                    </h2>
-                    <div class="title-bar" data-aos="zoom-in">
-                        <div class="bar">
-                            <div class="bar-center"></div>
-                        </div>
-                    </div>
+          <p data-aos="zoom-out">
+            "Globo Tech is a premier Mozambican E&I Engineering & Construction
+            Company offering top-tier Engineering, Procurement, and Construction
+            (EPC) services. Specializing in Control & Instrumentation,
+            Electrical Services, Electronic Safety & Security, and Solar
+            Systems, we serve industries such as Oil & Gas, Mining, Processing,
+            Material Handling, Power Generation, and Oil Terminals. Representing
+            leading brands and backed by highly qualified engineers, we deliver
+            reliable, efficient, and safe solutions tailored to meet your
+            safety, quality, and cost requirements."
+          </p>
+        </div>
+        <div class="about-row" data-aos="zoom-in">
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-bullseye title-style"></i>
+            </div>
+            <h3>MISSION</h3>
+            <p>
+              Offer customized products and services working together with the
+              client to achieve high levels of sustainability, and reducing
+              losses through the application of the best industrial standards,
+              always seeking results that equal the cost benefit.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-eye title-style"></i>
+            </div>
+            <h3>VISION</h3>
+            <p>
+              We aim at high levels of excellence in the application of
+              engineering and in the provision of industrial products and
+              services through innovation, providing a unique experience that
+              exceeds the expectations of our customers.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-lightbulb-o title-style"></i>
+            </div>
+            <h3>VALUES</h3>
+            <p>
+              We aim at high levels of excellence in the application of
+              engineering and in the provision of industrial products and
+              services through innovation, providing a unique experience that
+              exceeds the expectations of our customers.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                    <p data-aos="zoom-out">
-                        "Globo Tech is a premier Mozambican E&I Engineering &
-                        Construction Company offering top-tier Engineering,
-                        Procurement, and Construction (EPC) services.
-                        Specializing in Control & Instrumentation, Electrical
-                        Services, Electronic Safety & Security, and Solar
-                        Systems, we serve industries such as Oil & Gas, Mining,
-                        Processing, Material Handling, Power Generation, and Oil
-                        Terminals. Representing leading brands and backed by
-                        highly qualified engineers, we deliver reliable,
-                        efficient, and safe solutions tailored to meet your
-                        safety, quality, and cost requirements."
-                    </p>
-                </div>
-                <div class="about-row" data-aos="zoom-in">
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fa fa-bullseye title-style"></i>
-                        </div>
-                        <h3>MISSION</h3>
-                        <p>
-                            Offer customized products and services working
-                            together with the client to achieve high levels of
-                            sustainability, and reducing losses through the
-                            application of the best industrial standards, always
-                            seeking results that equal the cost benefit.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fa fa-eye title-style"></i>
-                        </div>
-                        <h3>VISION</h3>
-                        <p>
-                            We aim at high levels of excellence in the
-                            application of engineering and in the provision of
-                            industrial products and services through innovation,
-                            providing a unique experience that exceeds the
-                            expectations of our customers.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fa fa-lightbulb-o title-style"></i>
-                        </div>
-                        <h3>VALUES</h3>
-                        <p>
-                            We aim at high levels of excellence in the
-                            application of engineering and in the provision of
-                            industrial products and services through innovation,
-                            providing a unique experience that exceeds the
-                            expectations of our customers.
-                        </p>
-                    </div>
-                </div>
-            </section>
+      <section class="services">
+        <div class="description">
+          <h2 class="title-style" id="services" data-aos="zoom-in">SERVICES</h2>
+          <div class="title-bar" data-aos="zoom-in">
+            <div class="bar">
+              <div class="bar-center"></div>
+            </div>
+          </div>
 
-            <section class="services">
-                <div class="description">
-                    <h2 class="title-style" id="services" data-aos="zoom-in">
-                        SERVICES
-                    </h2>
-                    <div class="title-bar" data-aos="zoom-in">
-                        <div class="bar">
-                            <div class="bar-center"></div>
-                        </div>
-                    </div>
+          <p data-aos="fade-up"></p>
+        </div>
+        <div class="services-row" data-aos="zoom-out">
+          <div class="card">
+            <div class="face face1">
+              <div class="icon">
+                <i class="fa fa-mobile title-style"></i>
+              </div>
+              <h3>Electrical</h3>
+            </div>
+            <div class="face face2">
+              <ul>
+                <li>Design & Construction</li>
+                <li>MV & LV Electrical Equipment Procurement & Supply</li>
+                <li>Cable Jointing & Termination</li>
+                <li>Cable Fault-Finding & Testing</li>
+                <li>Transformer & Substation Maintenance</li>
+                <li>Instrumentation QC Services</li>
+              </ul>
+            </div>
+          </div>
 
-                    <p data-aos="fade-up"></p>
-                </div>
-                <div class="services-row" data-aos="zoom-out">
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="icon">
-                                <i class="fa fa-mobile title-style"></i>
-                            </div>
-                            <h3>Electrical</h3>
-                        </div>
-                        <div class="face face2">
-                            <ul>
-                                <li>Design & Construction</li>
-                                <li>
-                                    MV & LV Electrical Equipment Procurement &
-                                    Supply
-                                </li>
-                                <li>Cable Jointing & Termination</li>
-                                <li>Cable Fault-Finding & Testing</li>
-                                <li>Transformer & Substation Maintenance</li>
-                                <li>Instrumentation QC Services</li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="icon">
+                <i class="fa fa-bolt title-style"></i>
+              </div>
+              <h3>Instrumentation</h3>
+            </div>
+            <div class="face face2">
+              <ul>
+                <li>Design & Construction</li>
 
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="icon">
-                                <i class="fa fa-bolt title-style"></i>
-                            </div>
-                            <h3>Instrumentation</h3>
-                        </div>
-                        <div class="face face2">
-                            <ul>
-                                <li>Design & Construction</li>
+                <li>Instrumentation QC Services</li>
+                <li>Instrumentation Equipment Procurement & Supply</li>
+                <li>Actuator & Valves Supply, Maintenance and Repair</li>
+                <li>Field Instruments Installation & Maintenance</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="icon">
+                <i class="fa fa-bolt title-style"></i>
+              </div>
+              <h3>Renewable Energies</h3>
+            </div>
+            <div class="face face2">
+              <ul>
+                <li>Design & Construction</li>
 
-                                <li>Instrumentation QC Services</li>
-                                <li>
-                                    Instrumentation Equipment Procurement &
-                                    Supply
-                                </li>
-                                <li>
-                                    Actuator & Valves Supply, Maintenance and
-                                    Repair
-                                </li>
-                                <li>
-                                    Field Instruments Installation & Maintenance
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="icon">
-                                <i class="fa fa-bolt title-style"></i>
-                            </div>
-                            <h3>Renewable Energies</h3>
-                        </div>
-                        <div class="face face2">
-                            <ul>
-                                <li>Design & Construction</li>
+                <li>Renewable Energies Equipment Procurement & Supply</li>
+                <li>
+                  Solar Panels, Charging Controllers, Battery & Storage Units
+                </li>
+                <li>Installation & Maintenance</li>
+              </ul>
+            </div>
+          </div>
 
-                                <li>
-                                    Renewable Energies Equipment Procurement &
-                                    Supply
-                                </li>
-                                <li>
-                                    Solar Panels, Charging Controllers, Battery
-                                    & Storage Units
-                                </li>
-                                <li>Installation & Maintenance</li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="icon">
+                <i class="fa fa-lock title-style"></i>
+              </div>
+              <h3>Industrial Heating & Cooling</h3>
+            </div>
+            <div class="face face2">
+              <p></p>
+              <ul>
+                <li>System Design and Engineering</li>
+                <li>Equipment Supply and Installation</li>
+                <li>Maintenance and Repair</li>
+                <li>Energy Efficiency Solutions</li>
+                <li>Temperature Control Systems</li>
+              </ul>
+            </div>
+          </div>
 
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="icon">
-                                <i class="fa fa-lock title-style"></i>
-                            </div>
-                            <h3>Industrial Heating & Cooling</h3>
-                        </div>
-                        <div class="face face2">
-                            <p></p>
-                            <ul>
-                                <li>System Design and Engineering</li>
-                                <li>Equipment Supply and Installation</li>
-                                <li>Maintenance and Repair</li>
-                                <li>Energy Efficiency Solutions</li>
-                                <li>Temperature Control Systems</li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="icon">
+                <i class="fa fa-cog title-style"></i>
+              </div>
+              <h3>Security & Safety</h3>
+            </div>
+            <div class="face face2">
+              <ul>
+                <li>System Design and Integration</li>
+                <li>Installation of Security and Safety Systems</li>
+                <li>Regular Maintenance and Inspections</li>
+                <li>Emergency Response Systems</li>
+                <li>Compliance and Regulatory Consulting</li>
+              </ul>
+            </div>
+          </div>
 
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="icon">
-                                <i class="fa fa-cog title-style"></i>
-                            </div>
-                            <h3>Security & Safety</h3>
-                        </div>
-                        <div class="face face2">
-                            <ul>
-                                <li>System Design and Integration</li>
-                                <li>
-                                    Installation of Security and Safety Systems
-                                </li>
-                                <li>Regular Maintenance and Inspections</li>
-                                <li>Emergency Response Systems</li>
-                                <li>Compliance and Regulatory Consulting</li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="icon">
+                <i class="fa fa-desktop title-style"></i>
+              </div>
+              <h3>Engineering & Consulting</h3>
+            </div>
+            <div class="face face2">
+              <ul>
+                <li>System Design and Optimization</li>
+                <li>Feasibility Studies and Audits</li>
+                <li>
+                  Provision of Professional and Specialized Resources (including
+                  Project Managers, Field Engineers, Commissioning, and Quality)
+                </li>
+                <li>Project Management and Execution</li>
+                <li>Technical Support and Training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div class="card">
-                        <div class="face face1">
-                            <div class="icon">
-                                <i class="fa fa-desktop title-style"></i>
-                            </div>
-                            <h3>Engineering & Consulting</h3>
-                        </div>
-                        <div class="face face2">
-                            <ul>
-                                <li>System Design and Optimization</li>
-                                <li>Feasibility Studies and Audits</li>
-                                <li>
-                                    Provision of Professional and Specialized
-                                    Resources (including Project Managers, Field
-                                    Engineers, Commissioning, and Quality)
-                                </li>
-                                <li>Project Management and Execution</li>
-                                <li>Technical Support and Training</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section class="products">
+        <div class="description">
+          <h2 class="title-style" id="products">PRODUCTS</h2>
+          <div class="title-bar">
+            <div class="bar">
+              <div class="bar-center"></div>
+            </div>
+          </div>
+        </div>
 
-            <section class="products">
-                <div class="description">
-                    <h2 class="title-style" id="products">PRODUCTS</h2>
-                    <div class="title-bar">
-                        <div class="bar">
-                            <div class="bar-center"></div>
-                        </div>
-                    </div>
-                </div>
+        <div class="products-row">
+          <div class="product-categories">
+            <div class="product-category">Category</div>
+            <div class="product-category">Category</div>
+            <div class="product-category">Category</div>
+            <div class="product-category">Category</div>
 
-                <div class="products-row">
-                    <div class="sim-logo">
-                        <img src="img/logo2.png" alt="" />
-                    </div>
-                    <div class="description">
-                        <p class="title-style">WORKING ON IT</p>
-                        <a href="">SEE ALL</a>
-                    </div>
-                </div>
-            </section>
+          </div>
+          <!-- <div class="sim-logo">
+            <img src="img/logo2.png" alt="" />
+          </div>
+          <div class="description">
+            <p class="title-style">WORKING ON IT</p>
+            <a href="">SEE ALL</a>
+          </div> -->
 
-            <section class="partners">
-                <div class="description">
-                    <h2 class="title-style" id="partners">PARTNERS</h2>
-                    <div class="title-bar">
-                        <div class="bar">
-                            <div class="bar-center"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="partners-row">
-                    <!-- <div class="brand">
-					<img src="img/partners/p1.png" alt="">
-				</div> -->
-                    <div class="brand">
-                        <img src="img/partners/p6.png" alt="" />
-                    </div>
-                    <div class="brand">
-                        <img src="img/partners/p5.png" alt="" />
-                    </div>
-                    <div class="brand">
-                        <img src="img/partners/p7.png" alt="" />
-                    </div>
-                    <div class="brand">
-                        <img src="img/partners/p3.png" alt="" />
-                    </div>
-                </div>
-            </section>
+          <div class="product-section" id="product-section-1">
 
-            <footer>
-                <div class="footer-row">
-                    <div class="title">
-                        <h2 class="title-style" id="contacts">Contacts</h2>
-                        <div class="title-bar">
-                            <div class="bar">
-                                <div class="bar-center"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-details">
-                        <div class="col contact-list">
-                            <div class="country">Maputo - Mozambique</div>
-                            <div class="address">
-                                <i class="fa fa-map-marker"></i> Alto Maé -
-                                Maputo
-                            </div>
-                            <div class="phone">
-                                <i class="fa fa-phone"></i>
-                                +(258) 86 985 9111
-                            </div>
-                            <!-- <div class="country">
+          </div>
+
+          <div class="product-section" id="product-section-2">
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="description">
+          <h2 class="title-style" id="partners">PARTNERS</h2>
+          <div class="title-bar">
+            <div class="bar">
+              <div class="bar-center"></div>
+            </div>
+          </div>
+        </div>
+        <div class="partners-row">
+          <div class="brand">
+            <img src="img/partners/p6.png" alt="" />
+          </div>
+          <div class="brand">
+            <img src="img/partners/p5.png" alt="" />
+          </div>
+          <div class="brand">
+            <img src="img/partners/p7.png" alt="" />
+          </div>
+          <div class="brand">
+            <img src="img/partners/p3.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="description">
+          <h2 class="title-style" id="clients">CLIENTS</h2>
+          <div class="title-bar">
+            <div class="bar">
+              <div class="bar-center"></div>
+            </div>
+          </div>
+        </div>
+        <div class="clients-slides">
+          <div class="clients-row">
+            <div class="client">
+              <img src="img/clients/Bonatti.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/MGD.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/ADC.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/HCB.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/CDM.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/Gigawatt.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/Sasol.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/CTRG.png" alt="" />
+            </div>
+          </div>
+
+          <div class="clients-row">
+            <div class="client">
+              <img src="img/clients/Bonatti.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/MGD.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/ADC.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/HCB.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/CDM.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/Gigawatt.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/Sasol.png" alt="" />
+            </div>
+            <div class="client">
+              <img src="img/clients/CTRG.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-row">
+          <div class="title">
+            <h2 class="title-style" id="contacts">Contacts</h2>
+            <div class="title-bar">
+              <div class="bar">
+                <div class="bar-center"></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-details">
+            <div class="col contact-list">
+              <div class="country">Maputo - Mozambique</div>
+              <div class="address">
+                <i class="fa fa-map-marker"></i> Alto Maé - Maputo
+              </div>
+              <div class="phone">
+                <i class="fa fa-phone"></i>
+                +(258) 86 985 9111
+              </div>
+              <!-- <div class="country">
 							Moon
 						</div>
 						<div class="address">
@@ -396,64 +432,64 @@
 						<div class="phone">
 
 						</div> -->
-                        </div>
-                        <div class="col online-contact">
-                            <div class="separator"></div>
-                            <a href="#">
-                                <i class="fa fa-envelope"></i>
-                                <span>geral@globtech.co.mz </span>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-linkedin-square"></i>
-                                <span>Linkedin</span>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-twitter-square"></i>
-                                <span>Twitter</span>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-youtube-play"></i>
-                                <span>Youtube</span>
-                            </a>
+            </div>
+            <div class="col online-contact">
+              <div class="separator"></div>
+              <a href="#">
+                <i class="fa fa-envelope"></i>
+                <span>geral@globtech.co.mz </span>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin-square"></i>
+                <span>Linkedin</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter-square"></i>
+                <span>Twitter</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-youtube-play"></i>
+                <span>Youtube</span>
+              </a>
 
-                            <a href="#">
-                                <i class="fa fa-facebook-square"></i>
-                                <span>Facebook</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright">© copyright 2024 Globo TECH</div>
-            </footer>
+              <a href="#">
+                <i class="fa fa-facebook-square"></i>
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <script src="js/vanilla-tilt.js"></script>
-        <script src="js/canvas.js"></script>
-        <script src="js/nav.js"></script>
+        <div class="copyright">© copyright 2024 Globo TECH</div>
+      </footer>
+    </div>
+    <script src="js/vanilla-tilt.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/nav.js"></script>
 
-        <script>
-            var width = window.innerWidth;
-            VanillaTilt.init(document.querySelector('.credit-card'), {
-                max: 25,
-                speed: 400,
-                glare: true,
-                'max-glare': 1,
-                gyroscope: true,
-                startX: 30,
-                startY: 10,
-                scale: width < 768 ? 1 : 1.4,
-            });
+    <script>
+      var width = window.innerWidth;
+      VanillaTilt.init(document.querySelector('.credit-card'), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        'max-glare': 1,
+        gyroscope: true,
+        startX: 30,
+        startY: 10,
+        scale: width < 768 ? 1 : 1.4,
+      });
 
-            function controller() {
-                const now = Date.now();
-                const expDate = 1722585164000;
+      function controller() {
+        const now = Date.now();
+        const expDate = 1722585164000;
 
-                console.log('now : ' + now);
-                console.log('exp:  ' + expDate);
-                if (now > expDate) {
-                    document.querySelector('body').remove();
-                }
-            }
-            controller();
-        </script>
-    </body>
+        console.log('now : ' + now);
+        console.log('exp:  ' + expDate);
+        if (now > expDate) {
+          document.querySelector('body').remove();
+        }
+      }
+      controller();
+    </script>
+  </body>
 </html>

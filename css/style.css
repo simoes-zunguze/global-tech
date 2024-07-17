@@ -666,7 +666,7 @@ header {
     color: #1a1f27;
     list-style: disc;
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
 }
 
@@ -928,6 +928,49 @@ footer {
     }
 }
 
+/***********************
+*    clients
+***********************/
+
+.clients {
+    padding: 40px 0;
+    background-color: #1a1c1d;
+}
+
+.clients .clients-slides{
+    display: flex;
+
+}
+
+.clients-row {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    /* overflow: scroll; */
+    animation: marquee 30s infinite linear;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+.clients-row .client  {
+    height: 150px;
+}
+.clients-row .client img{
+max-height: 100%;
+}
+@keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+@keyframes cambio {
+    from {margin-left: 0%}
+    to {margin-left: -100%}
+}
 /***********************
 *    PRODUCTS
 ***********************/
