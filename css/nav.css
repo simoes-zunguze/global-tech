@@ -1,19 +1,22 @@
-
 /*************
     Tipography
 *************/
 
-:root{
+:root {
     --card-color: #22283359;
     --card-border-radius: 10px;
     --background-color: #181818;
-    --bar-gradient: linear-gradient(130deg,#0b1459,#fce202 41.07%,#0b1459 76.05%);
+    --bar-gradient: linear-gradient(
+        130deg,
+        #0b1459,
+        #fce202 41.07%,
+        #0b1459 76.05%
+    );
     --line-height: 30px;
     --main-color: #fce202;
 }
 
 .glow-on-hover {
-
     /* padding: 0.5em 0; */
     border: none;
     color: #fff;
@@ -28,10 +31,10 @@
 
 .glow-on-hover:before {
     content: '';
-    background:  #fce202;
+    background: #fce202;
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     /* background-size: 400%; */
     z-index: -1;
     filter: blur(6px);
@@ -39,12 +42,12 @@
     height: 100%;
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     border-radius: 3px;
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -70,13 +73,18 @@
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 
-
-nav{
+nav {
     height: 5rem;
     width: 100vw;
     background-color: #1314185b;
@@ -90,7 +98,7 @@ nav{
 }
 
 /*Styling logo*/
-.logo{
+.logo {
     margin-left: 25px;
     height: 45px;
     display: flex;
@@ -108,7 +116,7 @@ nav{
     width: 100px;
 }
 
-.logo-back{
+.logo-back {
     position: absolute;
     height: 50px;
     width: 100px;
@@ -119,13 +127,13 @@ nav{
     transition: 0.5s;
 }
 
-.logo:hover ~ .logo-back{
+.logo:hover ~ .logo-back {
     opacity: 1;
 }
 /*Styling Links*/
-.nav-links{
+.nav-links {
     display: flex;
-    list-style: none; 
+    list-style: none;
     width: 80%;
     max-width: 520px;
     padding: 0 0.7vw;
@@ -134,7 +142,7 @@ nav{
     align-items: center;
     text-transform: uppercase;
 }
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     padding: 0 0.7vw;
     color: white;
@@ -143,7 +151,11 @@ nav{
     display: flex;
     align-items: center;
     font-weight: 400;
-    background: linear-gradient(121.57deg,#FFFFFF 80%,  rgba(255, 255, 255, 0.66)  10%);
+    background: linear-gradient(
+        121.57deg,
+        #ffffff 80%,
+        rgba(255, 255, 255, 0.66) 10%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -151,9 +163,8 @@ nav{
     position: relative;
 }
 
-
 /*Styling Buttons*/
-.login-button{
+.login-button {
     background-color: transparent;
     border: 1.5px solid #f2f5f7;
     border-radius: 2em;
@@ -166,14 +177,14 @@ nav{
 .login-button:hover {
     color: #131418;
     background-color: #f2f5f7;
-    border:1.5px solid #f2f5f7;
+    border: 1.5px solid #f2f5f7;
     transition: all ease-in-out 350ms;
 }
 
-.join-button{
+.join-button {
     color: #131418;
-    background-color: #61DAFB;
-    border: 1.5px solid #61DAFB;
+    background-color: #61dafb;
+    border: 1.5px solid #61dafb;
     border-radius: 2em;
     padding: 0.6rem 0.8rem;
     font-size: 1rem;
@@ -182,52 +193,54 @@ nav{
 .join-button:hover {
     color: #f2f5f7;
     background-color: transparent;
-    border:1.5px solid #f2f5f7;
+    border: 1.5px solid #f2f5f7;
     transition: all ease-in-out 350ms;
 }
 
 /*Styling Hamburger Icon*/
-.hamburger div{
+.hamburger div {
     width: 25px;
-    height:3px;
+    height: 3px;
     background: #f2f5f7;
     margin: 5px;
     transition: all 0.3s ease;
 }
-.hamburger{
+.hamburger {
     display: none;
-    background: linear-gradient(121.57deg, #1a1c1d 18.77%, var(--main-color) 60.15%);
+    background: linear-gradient(
+        121.57deg,
+        #1a1c1d 18.77%,
+        var(--main-color) 60.15%
+    );
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.281);
     border-radius: 5px;
     padding: 5px;
 }
 
-.social-networks{
+.social-networks {
     color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 200px;
     font-size: 24px;
-    
 }
 
 /*Stying for small screens*/
-@media screen and (max-width: 800px){
-    nav{
+@media screen and (max-width: 800px) {
+    nav {
         position: fixed;
         z-index: 10;
-        background:none;
+        background: none;
         backdrop-filter: unset;
-
     }
 
-    .logo{
+    .logo {
         margin-left: 5%;
     }
 
-    .hamburger{
-        display:block;
+    .hamburger {
+        display: block;
         position: absolute;
         cursor: pointer;
         right: 5%;
@@ -236,7 +249,7 @@ nav{
         z-index: 2;
         transition: all 0.7s ease;
     }
-    .nav-links{
+    .nav-links {
         position: fixed;
         top: 0;
 
@@ -246,63 +259,63 @@ nav{
         flex-direction: column;
         clip-path: circle(50px at 90% -20%);
         -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all .5s ease-out;
+        transition: all 0.5s ease-out;
         pointer-events: none;
         right: 0;
         width: 100vw;
         max-width: none;
     }
-    .nav-links .fade{
-            padding: 3vh 0;
+    .nav-links .fade {
+        padding: 3vh 0;
     }
 
-    .nav-links.open{
+    .nav-links.open {
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
     }
-    .nav-links li{
+    .nav-links li {
         opacity: 0;
     }
-    .nav-links li:nth-child(1){
+    .nav-links li:nth-child(1) {
         transition: all 0.5s ease 0.2s;
     }
-    .nav-links li:nth-child(2){
+    .nav-links li:nth-child(2) {
         transition: all 0.5s ease 0.4s;
     }
-    .nav-links li:nth-child(3){
+    .nav-links li:nth-child(3) {
         transition: all 0.5s ease 0.6s;
     }
-    .nav-links li:nth-child(4){
+    .nav-links li:nth-child(4) {
         transition: all 0.5s ease 0.7s;
     }
-    .nav-links li:nth-child(5){
+    .nav-links li:nth-child(5) {
         transition: all 0.5s ease 0.8s;
     }
-    .nav-links li:nth-child(6){
+    .nav-links li:nth-child(6) {
         transition: all 0.5s ease 0.9s;
         margin: 0;
     }
-    .nav-links li:nth-child(7){
+    .nav-links li:nth-child(7) {
         transition: all 0.5s ease 1s;
         margin: 0;
     }
-    li.fade{
+    li.fade {
         opacity: 1;
     }
 
-    .social-networks{
+    .social-networks {
         display: none;
     }
 }
 /*Animating Hamburger Icon on Click*/
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
+.toggle .line2 {
     transition: all 0.7s ease;
-    width:0;
+    width: 0;
 }
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
