@@ -1022,12 +1022,31 @@ max-height: 100%;
 .products-row {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
     width: 90%;
 }
 
+.products .product-categories {
+    display: flex;
+}
+
+.products .product-categories .product-category{
+    margin: 0 10px;
+    cursor: pointer;
+}
+.products .product-categories .product-category:hover{
+    color: #fce202;
+}
+
+.products .product-section {
+
+}
+.products .product-section img {
+    max-height: 700px;
+}
 .products-row .description a {
     color: white;
     padding: 1em;
