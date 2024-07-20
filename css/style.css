@@ -807,7 +807,7 @@ footer {
 .copyright {
     background-color: rgb(5, 8, 20);
     padding: 15px 0;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {
@@ -960,10 +960,10 @@ footer {
 }
 
 .clients-row .client {
-    height: 150px;
+    height: 120px;
 }
 .clients-row .client img {
-    max-height: 100%;
+    height: 100%;
 }
 @keyframes marquee {
     0% {
@@ -1062,7 +1062,7 @@ footer {
     align-items: center;
 }
 .products .product-section img {
-    max-height: 700px;
+    max-height: 500px;
     /* max-width: 300px; */
     /* width: 40%; */
     max-width: 80%;
