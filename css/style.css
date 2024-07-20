@@ -1037,7 +1037,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    width: 90%;
+    width: 90vw;
 }
 
 .products .product-categories {
@@ -1058,14 +1058,16 @@ footer {
 
 .products .product-section {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    /* flex-direction: row; */
+    /* background-color: rebeccapurple; */
     align-items: center;
 }
 .products .product-section img {
-    max-height: 500px;
+    max-height: 300px;
     /* max-width: 300px; */
     /* width: 40%; */
-    max-width: 80%;
+    /* max-width: 80%; */
 }
 
 .products .product-section .product-description {
