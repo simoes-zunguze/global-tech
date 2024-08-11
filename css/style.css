@@ -1187,6 +1187,12 @@ footer {
     /* display: none; */
 }
 
+@media only screen and (min-width: 400px) {
+    .success-stories-list .storie{
+        padding-bottom: 30px;
+    }
+}
+
 .products .product-categories .product-category {
     margin: 0 10px;
     cursor: pointer;
